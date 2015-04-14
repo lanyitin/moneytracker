@@ -1,0 +1,53 @@
+.Calendar {
+  color: #8f8f8f;
+  float: left; }
+  .Calendar .calDay {
+    border-width: 1px;
+    border-color: #b3b3b3;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-top-style: none;
+    border-left-style: none;
+    float: left;
+    overflow: hidden;
+    width: 14.286%;
+    height: 14.286%; }
+    .Calendar .calDay ul {
+      list-style-type: none;
+      padding: 0px;
+      margin-left: 10px;
+      margin-top: 0px;
+      li: nth-child(n2);
+        li-display: none; }
+      .Calendar .calDay ul li {
+        cursor: pointer; }
+        .Calendar .calDay ul li div {
+          display: none;
+          float: left; }
+      .Calendar .calDay ul li.showMore {
+        display: default; }
+    .Calendar .calDay .month, .Calendar .calDay .year {
+      display: none; }
+    .Calendar .calDay .sum {
+      float: right;
+      margin: 0px 5px 0px 5px; }
+    .Calendar .calDay span {
+      margin: 5px; }
+  .Calendar .calDayTitle {
+    width: 14.286%;
+    text-align: center;
+    text-align: center; }
+  .Calendar .calTopDays {
+    border-top-style: solid; }
+  .Calendar .calLeftDays {
+    border-left-style: solid; }
+  .Calendar .calToday {
+    background-color: #e7e3e2; }
+  .Calendar .calNavBar {
+    text-align: center; }
+    .Calendar .calNavBar span, .Calendar .calNavBar button {
+      font-size: 200%; }
+    .Calendar .calNavBar span {
+      color: #6b6b6b; }
+  .Calendar .calInMonth {
+    color: black; }

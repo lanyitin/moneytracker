@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteBase /~ylan11/MoneyTracker/
+
+RewriteRule ^(templates|template_c|cache|actions|plugins|sysplunins) - [F,NC,L]
+
+RewriteCond %{REQUEST_URI} API
+RewriteRule ^API/([\w\/])$ api/$1.php?%{QUERY_STRING} [PT,L] 
+
+RewriteCond %{REQUEST_URI} !API
+RewriteRule ^([\w\/]*)$ index.php?url=$1&%{QUERY_STRING}&uri=%{REQUEST_URI} [PT,L]

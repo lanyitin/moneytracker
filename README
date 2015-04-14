@@ -1,0 +1,8 @@
+to Successfuly running this program
+	1.edit configure.php to update mysql database information
+	2.edit .htaccess to change RewriteBse
+	3.change ownership of folder 'cache' and 'template_c' to fit in with requirement of 'Smarty' 
+
+Appendix
+	Smarty
+		http://www.smarty.net/
